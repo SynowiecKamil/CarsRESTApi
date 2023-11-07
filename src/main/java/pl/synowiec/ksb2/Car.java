@@ -7,9 +7,6 @@ public class Car {
     private String model;
     private String color;
 
-    public Car() {
-    }
-
     public Car(Long id, String mark, String model, String color) {
         this.id = id;
         this.mark = mark;

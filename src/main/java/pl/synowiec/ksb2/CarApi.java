@@ -11,13 +11,13 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/cars")
 public class CarApi {
-    private List<Car> carList;
+    private final List<Car> carList;
 
     public CarApi() {
         this.carList = new ArrayList<>();
-        carList.add(new Car(1l, "Opel", "Corsa", "Black"));
-        carList.add(new Car(2l, "Audi", "A3", "Silver"));
-        carList.add(new Car(3l, "BMW", "M4", "White"));
+        carList.add(new Car(1L, "Opel", "Corsa", "Black"));
+        carList.add(new Car(2L, "Audi", "A3", "Silver"));
+        carList.add(new Car(3L, "BMW", "M4", "White"));
     }
 
     @GetMapping
